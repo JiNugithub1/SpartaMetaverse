@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
         talkPanel.SetActive(false);
         talkIndex = 0;
     }
-     void ShowChoice()
+    void ShowChoice()
     {
         choicePanel.SetActive(true);
     }
@@ -79,5 +79,7 @@ public class GameManager : MonoBehaviour
     {
         choicePanel.SetActive(false);
         EndTalk(); // ✅ 대화 종료
+        noButton.interactable = false;
+        noButton.interactable = true;
     }
 }
